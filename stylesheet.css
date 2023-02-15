@@ -1,0 +1,113 @@
+/*
+COLOR SCHEME
+menu bar: black with very light blue text (aliceblue)
+    -opacity transitions to 0.5 when scrolling down
+body: multiple div boxes with yellow and orange
+
+*/
+body {
+    background-color: lightblue;
+    color: aliceblue;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    margin: 0 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: #252525;
+    right: 0;
+    left: 0;
+    bottom:0;
+    position: absolute;
+}
+
+.leftside {
+    border: 5px solid rgb(245, 255, 135); /* line width, line style, line color */ 
+    position: absolute;
+    left: 1.3em;
+    right: 40.5%;
+    top: 6.5em;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    border-radius: 2em;
+}
+
+.rightside {
+    border: 5px solid rgb(255, 189, 90);
+    position: absolute;
+    left: 60.5%;
+    right: 1.3em;
+    top: 6.5em;
+    padding-top: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    border-radius: 2em;
+}
+
+.menu {
+    background-color: #3d3d3d;
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    left: auto;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.2s; 
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+.menu.scrolled {
+    opacity: 0.6;
+}
+
+.recordingEntryLeft {
+    border: 3px solid rgb(255, 189, 90);
+    position: absolute;
+    margin-left: 1em;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.recordingEntryMiddle {
+    border: 3px solid rgb(255, 189, 90);
+    position: absolute;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.recordingEntryRight {
+    border: 3px solid rgb(255, 189, 90);
+    position: absolute;
+    margin-right: 1em;
+    padding: 0.5em;
+    border-radius: 1.5em;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    text-align: center; 
+}
